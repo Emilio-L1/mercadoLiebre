@@ -215,3 +215,202 @@ main section div {
 .card:hover .nombre-articulo {
     display: block;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-icon{
+    font-size: 2em;
+    color: #055bf0;
+    margin-bottom: 10px;
+}
+
+.footer-icon:hover {
+    color: var(--azul);
+}
+
+.copyright {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 80%;
+    padding: 15px 0;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+    background-image: url("../images/img-home-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+}
+
+.form-login > input, .form-login > button {
+    border: none;
+    padding: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form-login button {
+    background-color: var(--celeste);
+    color: var(--gris-claro);
+    cursor: pointer;
+}
+
+.form-login button:hover {
+    background-color: #0022AA;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 10px;
+}
+
+.formulario > input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.formulario > label {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.form-item > label {
+    padding: 0 20px 0 20px;
+}
+
+.form-button {
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.form-button > button,input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.form-button > button {
+    background-color: var(--verde);
+    color: var(--gris-claro);
+}
+
+.form-button > input {
+    background-color: var(--amarrillo);
+}
+
+@media (min-width: 720px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 40%;
+    }
+
+    .menu-opciones {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+    }
+
+    .logo img {
+        width: 33%;
+    }
+    
+    .logo form {
+        width: 33%;
+    }
+    
+    .logo p {
+        width: 33%;
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+
+    .form-login {
+        width: 75%;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card{
+        width: 20%;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        width: 33%;
+    }
+}
